@@ -1,0 +1,30 @@
+PODS:
+  - Alamofire (5.4.4)
+  - CRNotifications (1.2.1)
+  - IQKeyboardManagerSwift (6.5.9)
+  - SDWebImage (5.12.1):
+    - SDWebImage/Core (= 5.12.1)
+  - SDWebImage/Core (5.12.1)
+
+DEPENDENCIES:
+  - Alamofire (~> 5.4)
+  - CRNotifications
+  - IQKeyboardManagerSwift
+  - SDWebImage
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - CRNotifications
+    - IQKeyboardManagerSwift
+    - SDWebImage
+
+SPEC CHECKSUMS:
+  Alamofire: f3b09a368f1582ab751b3fff5460276e0d2cf5c9
+  CRNotifications: 2799786cb63e104c75699843d8928afd680182f3
+  IQKeyboardManagerSwift: 6e839c575c4aa1078d58a596e41244e77abe918f
+  SDWebImage: 4dc3e42d9ec0c1028b960a33ac6b637bb432207b
+
+PODFILE CHECKSUM: 75a737ea75f0abd9c8bce803860514623ba90820
+
+COCOAPODS: 1.11.2
