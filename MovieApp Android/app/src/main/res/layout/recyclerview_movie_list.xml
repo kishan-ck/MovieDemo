@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--this layout is use for display movie list-->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/movieListLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!--use for set movie image-->
+    <ImageView
+        android:id="@+id/moviePicImageView"
+        android:layout_width="100dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:src="@mipmap/ic_launcher"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/movierateTextView"
+        app:layout_constraintTop_toTopOf="@id/movieNameTextView" />
+
+    <!--use for set movie name-->
+    <TextView
+        android:id="@+id/movieNameTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/moviePicImageView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--use for set movie date-->
+    <TextView
+        android:id="@+id/movieDateTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/moviePicImageView"
+        app:layout_constraintTop_toBottomOf="@id/movieNameTextView" />
+
+    <ImageView
+        android:id="@+id/thumbImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:src="@drawable/ic_baseline_thumb_up_alt_24"
+        app:layout_constraintStart_toStartOf="@id/movieDateTextView"
+        app:layout_constraintTop_toTopOf="@id/movierateTextView"
+        app:layout_constraintBottom_toBottomOf="@id/movierateTextView"
+        />
+
+    <!--use for set rateing-->
+    <TextView
+        android:id="@+id/movierateTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/thumbImageView"
+        app:layout_constraintTop_toBottomOf="@id/movieDateTextView" />
+
+    <!--use for set movie overview details-->
+    <TextView
+        android:id="@+id/movieDetailsTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        app:layout_constraintTop_toBottomOf="@id/moviePicImageView"/>
+
+<View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="@android:color/darker_gray"
+    android:layout_marginTop="10dp"
+    app:layout_constraintTop_toBottomOf="@id/movieDetailsTextView"
+    app:layout_constraintBottom_toBottomOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

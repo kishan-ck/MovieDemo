@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!--Use for databinding-->
+    <data>
+        <!--Use for a movie select databinding-->
+        <variable
+            name="movieViewModel"
+            type="com.coderkube.movieapp.viewModel.MovieListViewModel" />
+    </data>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar" />
+
+        <View
+            android:id="@+id/linearView"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintTop_toBottomOf="@id/toolbar" />
+
+        <!--use for set movie list in recyclerview-->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerviewMovieList"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearView" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
